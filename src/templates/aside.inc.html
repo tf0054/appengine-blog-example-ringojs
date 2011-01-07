@@ -1,0 +1,18 @@
+<aside>
+    <p>
+        <img src="/plus.png" style="position: relative; top: 3px" /> <a href="/articles/edit">Add article</a>
+    </p>
+    {:if asideTags}
+    <p>
+        {:r asideTags}
+        <a href="/tags/tag?label={=label}">{=label}</a> ({=count})<br />
+        {/:r}
+    </p>
+    {/:if}
+    <p>
+        <h6>More examples</h6>
+        <ul>
+            <li><a href="/blobstore">Blobstore</a> <span class="new">New!</a></li>
+        </ul>
+    </p>
+</aside>

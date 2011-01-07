@@ -1,0 +1,20 @@
+{#template /layout.html}
+
+{#def breadcrumbs}
+<b>Blobstore example</b>
+{/#def}
+
+{#def content}
+<form action="{=uploadURL}" method="POST" enctype="multipart/form-data">
+    <p>
+        <input type="file" name="file" />
+    </p>
+    <p>       
+        <button type="submit">Upload</button>
+    </p>
+</form>
+{/#def}
+
+{#def aside}
+{#include /aside.inc.html}
+{/#def}

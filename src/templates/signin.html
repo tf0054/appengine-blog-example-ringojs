@@ -1,0 +1,16 @@
+{#template /layout.html}
+
+{#def breadcrumbs}
+<a href="/">Blog</a> / <b>Sign in</b>
+{/#def}
+
+{#def content}
+<p>
+You can login using one of the following services:
+</p>
+<ul>
+{:r openIdProviders}
+    <li><a href="{=str uri}">{=title}</a></li>
+{/:r}
+</ul>
+{/#def}

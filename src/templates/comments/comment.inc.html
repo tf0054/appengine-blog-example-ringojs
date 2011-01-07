@@ -1,0 +1,7 @@
+<article class="comment">
+    <strong>by {:if uri}<a href="{=uri uri}" rel="nofollow">{=author}</a>{:e}{=author}{/:if}, at {=date created}</strong>
+    <div>
+    {=html content}
+    </div>
+    <p><a href="/comments/comment?key={=key}" class="DELETE">delete</a></p>
+</article>
