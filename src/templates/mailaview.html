@@ -1,0 +1,11 @@
+<html>
+<body>
+<h1>view with blob</h1>
+<hr/>
+{:reduce lists}
+    <li><a href="/mailaview?key={=key}">{=filename}</a> -> {=type}</li>
+{:else}
+    <li>No articles found</li>    
+{/:reduce}
+</body>
+</html>
